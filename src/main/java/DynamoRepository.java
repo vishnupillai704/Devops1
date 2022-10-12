@@ -22,6 +22,7 @@ public class DynamoRepository {
     public String delete( String id){
         Datatype type= dynamoDBMapper.load(Datatype.class,id);
         dynamoDBMapper.delete(type);
-        return "Deleted";
+        return " Message Deleted";
     }
+
 }
